@@ -1,0 +1,74 @@
+Crear el script /home/javier/start_camaras.sh
+#!/bin/bash
+cd /home/javier/PycharmProjects/aprende_camaras_python/flask/camaras_todas_ip05
+source  /home/javier/PycharmProjects/aprende_camaras_python/flask/camaras_todas_ip05
+python app.py
+
+
+Crear el servicio
+sudo nano /etc/systemd/system/camaras.service
+[Unit]
+Description=Servidor Flask Camaras
+After=network.target
+
+[Service]
+User=javier
+WorkingDirectory=/home/javier/PycharmProjects/aprende_camaras_python/flask/camaras_ip05
+ExecStart=/bin/bash /home/javier/start_camaras.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+--------
+
+3. Activar el servicio
+Recargar systemd:
+sudo systemctl daemon-reload
+Activar inicio automático:
+sudo systemctl enable camaras.service
+Arrancar ahora:
+sudo systemctl start camaras.service
+4. Ver logs
+Muy útil si falla algo:
+journalctl -u camaras.service -f
+Mejor aún: evitar el script .sh
+Puedes lanzar directamente el Python del venv:
+[Service]
+User=javier
+WorkingDirectory=/home/javier/PycharmProjects/aprende_camaras_python/flask/camaras_ip05
+ExecStart=/home/javier/PycharmProjects/aprende_camaras_python/.venv/bin/python app.py
+Restart=always
+Así no necesitas:
+source
+script bash
+activar entorno manualmente
+Es más limpio y más profesional.
+
+
+---------------------
+SOLUCION FINAL
+Creamos el servicio camaras
+sudo nano /etc/systemd/system/camaras.service
+------------
+[Unit]
+Description=Servidor Flask Camaras
+After=network.target
+
+[Service]
+User=javier
+WorkingDirectory=/home/javier/PycharmProjects/aprende_camaras_python/flask/camaras_ip05
+ExecStart=/home/javier/PycharmProjects/aprende_camaras_python/.venv/bin/python app.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+----------
+
+sudo systemctl daemon-reload
+sudo systemctl enable camaras.service
+sudo systemctl start camaras.service
+
+
+

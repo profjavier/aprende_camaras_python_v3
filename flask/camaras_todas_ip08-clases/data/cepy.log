@@ -1,0 +1,155 @@
+2026-05-10 11:04:45,065 | INFO     | app | Iniciando aplicación
+2026-05-10 11:04:45,070 | INFO     | app | Inicializando cámaras
+2026-05-10 11:04:45,071 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:04:45,074 | INFO     | app | Camaras cargadas
+2026-05-10 11:04:45,079 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:05:17,686 | INFO     | app | Iniciando aplicación
+2026-05-10 11:05:17,686 | INFO     | app | Inicializando cámaras
+2026-05-10 11:05:17,687 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:05:17,687 | INFO     | app | Camaras cargadas
+2026-05-10 11:05:17,687 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:06:20,367 | INFO     | app | Iniciando aplicación
+2026-05-10 11:06:20,368 | INFO     | app | Inicializando cámaras
+2026-05-10 11:06:20,368 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:06:20,369 | INFO     | app | Camaras cargadas
+2026-05-10 11:06:20,370 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:07:25,632 | INFO     | app | Iniciando aplicación
+2026-05-10 11:07:25,633 | INFO     | app | Inicializando cámaras
+2026-05-10 11:07:25,633 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:07:25,634 | INFO     | app | Camaras cargadas
+2026-05-10 11:07:25,634 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:07:27,804 | INFO     | app | Conectando cámara CEPY01 (192.168.60.153)
+2026-05-10 11:07:57,858 | INFO     | app | Conectando cámara CEPY02 (192.168.60.76)
+2026-05-10 11:08:27,941 | INFO     | app | Conectando cámara CEPY03 (192.168.60.108)
+2026-05-10 11:08:57,946 | INFO     | app | Conectando cámara CEPY04 (192.168.60.56)
+2026-05-10 11:09:27,975 | INFO     | app | Conectando cámara CEPY05 (192.168.60.169)
+2026-05-10 11:09:58,037 | INFO     | app | Conectando cámara CEPY06 (192.168.60.107)
+2026-05-10 11:10:28,072 | INFO     | app | Conectando cámara CEPY07 (192.168.60.71)
+2026-05-10 11:10:58,090 | INFO     | app | Conectando cámara CEPY08 (192.168.60.60)
+2026-05-10 11:18:33,206 | INFO     | app | Iniciando aplicación
+2026-05-10 11:18:33,207 | INFO     | app | Inicializando cámaras
+2026-05-10 11:18:33,208 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:18:33,208 | INFO     | app | Camaras cargadas
+2026-05-10 11:18:33,209 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:18:35,363 | INFO     | app | Conectando cámara CEPY01 (192.168.60.153)
+2026-05-10 11:19:05,433 | INFO     | app | Conectando cámara CEPY02 (192.168.60.76)
+2026-05-10 11:19:35,490 | INFO     | app | Conectando cámara CEPY03 (192.168.60.108)
+2026-05-10 11:20:05,571 | INFO     | app | Conectando cámara CEPY04 (192.168.60.56)
+2026-05-10 11:20:35,644 | INFO     | app | Conectando cámara CEPY05 (192.168.60.169)
+2026-05-10 11:21:05,713 | INFO     | app | Conectando cámara CEPY06 (192.168.60.107)
+2026-05-10 11:21:35,781 | INFO     | app | Conectando cámara CEPY07 (192.168.60.71)
+2026-05-10 11:22:05,850 | INFO     | app | Conectando cámara CEPY08 (192.168.60.60)
+2026-05-10 11:52:07,339 | INFO     | app | Iniciando aplicación
+2026-05-10 11:52:07,339 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:52:07,340 | INFO     | app | Camaras cargadas
+2026-05-10 11:52:39,757 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 11:53:09,807 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 11:53:39,868 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 11:54:09,874 | WARNING  | app | No conecta cámara CEPY04
+2026-05-10 11:54:39,923 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 11:54:48,674 | INFO     | app | Iniciando aplicación
+2026-05-10 11:54:48,675 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:54:48,677 | INFO     | app | Camaras cargadas
+2026-05-10 11:55:20,943 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 11:55:46,504 | INFO     | app | Iniciando aplicación
+2026-05-10 11:55:46,505 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:55:46,506 | INFO     | app | Camaras cargadas
+2026-05-10 11:56:18,771 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 12:27:44,062 | INFO     | app | Iniciando aplicación
+2026-05-10 12:27:44,064 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 12:27:44,065 | INFO     | app | Camaras cargadas
+2026-05-10 12:28:16,239 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 12:28:46,278 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 12:29:16,380 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 12:29:46,385 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 12:30:16,561 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 12:30:35,651 | INFO     | app | Iniciando aplicación
+2026-05-10 12:30:35,651 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 12:30:35,653 | INFO     | app | Camaras cargadas
+2026-05-10 12:33:31,214 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 12:33:31,215 | INFO     | app | Cámaras cargadas correctamente
+2026-05-10 12:33:31,304 | INFO     | app | Iniciando aplicación
+2026-05-10 12:34:03,495 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 12:34:33,543 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 12:35:03,624 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 12:35:33,660 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 12:36:03,661 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 12:36:33,694 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 12:37:03,779 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 12:37:33,802 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 12:38:03,892 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 12:38:33,894 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 12:39:03,920 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 12:39:33,944 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 12:40:03,963 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 12:40:34,005 | WARNING  | app | No conecta cámara CEPY04
+2026-05-10 12:41:03,994 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 12:41:33,989 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 12:42:04,095 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 12:42:34,103 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 12:43:04,193 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 12:43:34,202 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 12:44:04,253 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 12:44:34,271 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 12:45:04,370 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 12:45:34,386 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 12:46:04,469 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 12:46:34,500 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 12:47:04,542 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 12:47:34,575 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 12:48:04,576 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 12:48:34,595 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 12:49:04,638 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 12:49:34,672 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 12:50:04,666 | WARNING  | app | No conecta cámara CEPY04
+2026-05-10 12:50:34,790 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 12:51:04,817 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 13:02:53,345 | INFO     | app | Iniciando aplicación
+2026-05-10 13:03:20,757 | ERROR    | app | Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/javier/PycharmProjects/aprende_camaras_python/versiones_flask/camaras_todas_ip08-clases/utils/security.py", line 17, in wrapper
+    return f(*args, **kwargs)
+  File "/home/javier/PycharmProjects/aprende_camaras_python/versiones_flask/camaras_todas_ip08-clases/app.py", line 68, in index
+    camaras=stream.get_camaras()
+            ^^^^^^^^^^^^^^^^^^
+AttributeError: 'CamaraStream' object has no attribute 'get_camaras'
+2026-05-10 13:03:23,262 | INFO     | app | No conecta cámara CEPY02
+2026-05-10 13:03:48,232 | ERROR    | app | Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/home/javier/PycharmProjects/aprende_camaras_python/versiones_flask/camaras_todas_ip08-clases/utils/security.py", line 17, in wrapper
+    return f(*args, **kwargs)
+  File "/home/javier/PycharmProjects/aprende_camaras_python/versiones_flask/camaras_todas_ip08-clases/app.py", line 68, in index
+    camaras=stream.get_camaras()
+            ^^^^^^^^^^^^^^^^^^
+AttributeError: 'CamaraStream' object has no attribute 'get_camaras'
+2026-05-10 13:03:53,356 | INFO     | app | No conecta cámara CEPY05
+2026-05-10 13:04:25,497 | INFO     | app | No conecta cámara CEPY07
+2026-05-10 13:04:55,518 | INFO     | app | No conecta cámara CEPY04
+2026-05-10 13:06:19,492 | INFO     | app | Iniciando aplicación
+2026-05-10 13:06:24,567 | INFO     | app | Iniciando aplicación
+2026-05-10 13:07:51,523 | INFO     | app | Iniciando aplicación
+2026-05-10 13:07:58,400 | INFO     | app | Iniciando aplicación

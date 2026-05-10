@@ -1,0 +1,42 @@
+Nombre de la cámara: CEPY-01, CEPY-02...
+Nombre de usuario: cepy01_2026
+Nombre: cepy01_2026
+email cepy01.2026@gmail.com
+pas Castelar2026%
+Verificacion mi movil
+
+
+Nombre de la cámara: CEPY-01, CEPY-02...
+Configuración acceso a cámara:
+	- Nombre de usuario: cepy01_2026
+	- pasword: Castelar2026
+Configuración acceso a monitorización cámara (cuenta cloud):
+	- email: cepy01.2026@gmail.com
+	- pasword: Castelar2026%
+
+
+	Nombre de la cámara: CEPY-01, CEPY-02...
+Configuración acceso a cámara:
+	- Nombre de usuario: cepy01
+	- pasword: Castelar2026
+Configuración acceso a monitorización cámara (cuenta cloud):
+	- email: cepy01.2026@gmail.com
+	- pasword: Castelar2026%
+
+	Nombre de la cámara: CEPY-01, CEPY-02...
+Nombre de usuario: cepy2026
+pas Castelar2026
+
+Nombre: cepy01_2026
+email cepy01.2026@gmail.com
+
+Verificacion mi movil
+
+ULTIMA CONFIGURACION TAPOS
+cuenta javier@iescastelar.com
+Al..xx
+cepycastelar@gmail.com
+
+cuenta local tapos
+USUARIO = 'cepy2026'  # El que creaste en la App Tapo
+PASSWORD = 'Castelar2026'  # El que creaste en la App Tapo

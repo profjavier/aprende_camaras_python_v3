@@ -1,0 +1,22 @@
+sudo apt update
+sudo apt install avahi-daemon
+
+sudo systemctl enable avahi-daemon
+sudo systemctl start avahi-daemon
+
+Ver el nombre
+hostname
+
+si se quiere cambiar 
+sudo hostnamectl set-hostname cepy-server
+
+http://cepy-server.local
+
+ssh javier@cepy-server.local
+
+ver ssd montados
+lsblk
+
+para cambiar el nombre
+ln -s /media/javier/5AD8128BD8126613 /home/javier/ssd
+

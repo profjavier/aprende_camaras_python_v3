@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %} - Error del servidor{% endblock %}
+
+{% block content %}
+
+<div class="container text-center py-5">
+
+    <div class="mb-4">
+        <img src="{{ url_for('static', filename='images/500.png') }}"
+             alt="Error 500"
+             class="img-fluid"
+             style="max-width: 600px;">
+    </div>
+
+    <h1 class="display-4 fw-bold text-danger">500</h1>
+
+    <h2 class="mb-3">Error interno del servidor</h2>
+
+    <p class="text-muted mb-4">
+        Lo sentimos, ha ocurrido un problema en el servidor. Por favor, inténtalo de nuevo más tarde.
+    </p>
+
+    <a href="{{ url_for('index') }}" class="btn btn-primary btn-lg">
+        <i class="fas fa-home"></i> Volver al inicio
+    </a>
+
+</div>
+
+{% endblock %}

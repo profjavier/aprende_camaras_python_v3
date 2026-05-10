@@ -1,0 +1,247 @@
+2026-05-10 11:04:45,065 | INFO     | app | Iniciando aplicación
+2026-05-10 11:04:45,070 | INFO     | app | Inicializando cámaras
+2026-05-10 11:04:45,071 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:04:45,074 | INFO     | app | Camaras cargadas
+2026-05-10 11:04:45,079 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:05:17,686 | INFO     | app | Iniciando aplicación
+2026-05-10 11:05:17,686 | INFO     | app | Inicializando cámaras
+2026-05-10 11:05:17,687 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:05:17,687 | INFO     | app | Camaras cargadas
+2026-05-10 11:05:17,687 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:06:20,367 | INFO     | app | Iniciando aplicación
+2026-05-10 11:06:20,368 | INFO     | app | Inicializando cámaras
+2026-05-10 11:06:20,368 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:06:20,369 | INFO     | app | Camaras cargadas
+2026-05-10 11:06:20,370 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:07:25,632 | INFO     | app | Iniciando aplicación
+2026-05-10 11:07:25,633 | INFO     | app | Inicializando cámaras
+2026-05-10 11:07:25,633 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:07:25,634 | INFO     | app | Camaras cargadas
+2026-05-10 11:07:25,634 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:07:27,804 | INFO     | app | Conectando cámara CEPY01 (192.168.60.153)
+2026-05-10 11:07:57,858 | INFO     | app | Conectando cámara CEPY02 (192.168.60.76)
+2026-05-10 11:08:27,941 | INFO     | app | Conectando cámara CEPY03 (192.168.60.108)
+2026-05-10 11:08:57,946 | INFO     | app | Conectando cámara CEPY04 (192.168.60.56)
+2026-05-10 11:09:27,975 | INFO     | app | Conectando cámara CEPY05 (192.168.60.169)
+2026-05-10 11:09:58,037 | INFO     | app | Conectando cámara CEPY06 (192.168.60.107)
+2026-05-10 11:10:28,072 | INFO     | app | Conectando cámara CEPY07 (192.168.60.71)
+2026-05-10 11:10:58,090 | INFO     | app | Conectando cámara CEPY08 (192.168.60.60)
+2026-05-10 11:18:33,206 | INFO     | app | Iniciando aplicación
+2026-05-10 11:18:33,207 | INFO     | app | Inicializando cámaras
+2026-05-10 11:18:33,208 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:18:33,208 | INFO     | app | Camaras cargadas
+2026-05-10 11:18:33,209 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:18:35,363 | INFO     | app | Conectando cámara CEPY01 (192.168.60.153)
+2026-05-10 11:19:05,433 | INFO     | app | Conectando cámara CEPY02 (192.168.60.76)
+2026-05-10 11:19:35,490 | INFO     | app | Conectando cámara CEPY03 (192.168.60.108)
+2026-05-10 11:20:05,571 | INFO     | app | Conectando cámara CEPY04 (192.168.60.56)
+2026-05-10 11:20:35,644 | INFO     | app | Conectando cámara CEPY05 (192.168.60.169)
+2026-05-10 11:21:05,713 | INFO     | app | Conectando cámara CEPY06 (192.168.60.107)
+2026-05-10 11:21:35,781 | INFO     | app | Conectando cámara CEPY07 (192.168.60.71)
+2026-05-10 11:22:05,850 | INFO     | app | Conectando cámara CEPY08 (192.168.60.60)
+2026-05-10 11:52:07,339 | INFO     | app | Iniciando aplicación
+2026-05-10 11:52:07,339 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:52:07,340 | INFO     | app | Camaras cargadas
+2026-05-10 11:52:39,757 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 11:53:09,807 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 11:53:39,868 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 11:54:09,874 | WARNING  | app | No conecta cámara CEPY04
+2026-05-10 11:54:39,923 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 11:54:48,674 | INFO     | app | Iniciando aplicación
+2026-05-10 11:54:48,675 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:54:48,677 | INFO     | app | Camaras cargadas
+2026-05-10 11:55:20,943 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 11:55:46,504 | INFO     | app | Iniciando aplicación
+2026-05-10 11:55:46,505 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:55:46,506 | INFO     | app | Camaras cargadas
+2026-05-10 11:56:18,771 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:05:17,335 | INFO     | app | Iniciando aplicación
+2026-05-10 13:05:17,336 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 13:05:17,338 | INFO     | app | Camaras cargadas
+2026-05-10 13:05:49,679 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 15:55:11,656 | INFO     | app | Iniciando aplicación
+2026-05-10 15:55:11,659 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 15:55:11,669 | INFO     | app | 9 cámara(s) cargada(s)
+2026-05-10 15:55:11,684 | INFO     | app | [CASA] Hilos iniciados
+2026-05-10 15:55:11,687 | INFO     | app | [CEPY01] Hilos iniciados
+2026-05-10 15:55:11,690 | INFO     | app | [CEPY02] Hilos iniciados
+2026-05-10 15:55:11,696 | INFO     | app | [CEPY03] Hilos iniciados
+2026-05-10 15:55:11,702 | INFO     | app | [CEPY04] Hilos iniciados
+2026-05-10 15:55:11,708 | INFO     | app | [CEPY05] Hilos iniciados
+2026-05-10 15:55:11,716 | INFO     | app | [CEPY06] Hilos iniciados
+2026-05-10 15:55:11,720 | INFO     | app | [CEPY07] Hilos iniciados
+2026-05-10 15:55:11,722 | INFO     | app | [CEPY08] Hilos iniciados
+2026-05-10 15:55:13,986 | INFO     | app | [CASA] Conectada
+2026-05-10 15:55:44,063 | WARNING  | app | [CEPY01] No se puede conectar, reintentando en 2 s…
+2026-05-10 15:56:14,160 | WARNING  | app | [CEPY03] No se puede conectar, reintentando en 2 s…
+2026-05-10 15:56:44,172 | WARNING  | app | [CEPY02] No se puede conectar, reintentando en 2 s…
+2026-05-10 15:57:14,202 | WARNING  | app | [CEPY07] No se puede conectar, reintentando en 2 s…
+2026-05-10 15:57:44,245 | WARNING  | app | [CEPY04] No se puede conectar, reintentando en 2 s…
+2026-05-10 15:58:14,283 | WARNING  | app | [CEPY05] No se puede conectar, reintentando en 2 s…
+2026-05-10 15:58:44,271 | WARNING  | app | [CEPY06] No se puede conectar, reintentando en 2 s…
+2026-05-10 15:59:10,803 | INFO     | app | Iniciando aplicación
+2026-05-10 15:59:10,804 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 15:59:10,807 | INFO     | app | 9 cámara(s) cargada(s)
+2026-05-10 15:59:10,810 | INFO     | app | [CASA] Hilos iniciados
+2026-05-10 15:59:10,811 | INFO     | app | [CEPY01] Hilos iniciados
+2026-05-10 15:59:10,813 | INFO     | app | [CEPY02] Hilos iniciados
+2026-05-10 15:59:10,814 | INFO     | app | [CEPY03] Hilos iniciados
+2026-05-10 15:59:10,816 | INFO     | app | [CEPY04] Hilos iniciados
+2026-05-10 15:59:10,827 | INFO     | app | [CEPY05] Hilos iniciados
+2026-05-10 15:59:10,829 | INFO     | app | [CEPY06] Hilos iniciados
+2026-05-10 15:59:10,830 | INFO     | app | [CEPY07] Hilos iniciados
+2026-05-10 15:59:10,832 | INFO     | app | [CEPY08] Hilos iniciados
+2026-05-10 15:59:12,969 | INFO     | app | [CASA] Conectada
+2026-05-10 15:59:42,983 | WARNING  | app | [CEPY01] No se puede conectar, reintentando en 5 s…
+2026-05-10 16:00:12,993 | WARNING  | app | [CEPY03] No se puede conectar, reintentando en 5 s…
+2026-05-10 16:00:38,173 | INFO     | app | Iniciando aplicación
+2026-05-10 16:00:38,174 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 16:00:38,177 | INFO     | app | 9 cámara(s) cargada(s)
+2026-05-10 16:00:38,184 | INFO     | app | [CASA] Hilos iniciados
+2026-05-10 16:00:38,193 | INFO     | app | [CEPY01] Hilos iniciados
+2026-05-10 16:00:38,196 | INFO     | app | [CEPY02] Hilos iniciados
+2026-05-10 16:00:38,198 | INFO     | app | [CEPY03] Hilos iniciados
+2026-05-10 16:00:38,201 | INFO     | app | [CEPY04] Hilos iniciados
+2026-05-10 16:00:38,208 | INFO     | app | [CEPY05] Hilos iniciados
+2026-05-10 16:00:38,213 | INFO     | app | [CEPY06] Hilos iniciados
+2026-05-10 16:00:38,214 | INFO     | app | [CEPY07] Hilos iniciados
+2026-05-10 16:00:38,218 | INFO     | app | [CEPY08] Hilos iniciados
+2026-05-10 16:00:40,362 | INFO     | app | [CASA] Conectada
+2026-05-10 16:01:10,372 | WARNING  | app | [CEPY01] No se puede conectar, reintentando en 5 s…
+2026-05-10 16:01:40,426 | WARNING  | app | [CEPY03] No se puede conectar, reintentando en 5 s…
+2026-05-10 16:02:10,428 | WARNING  | app | [CEPY05] No se puede conectar, reintentando en 5 s…
+2026-05-10 16:02:40,487 | WARNING  | app | [CEPY07] No se puede conectar, reintentando en 5 s…
+2026-05-10 16:03:10,582 | WARNING  | app | [CEPY02] No se puede conectar, reintentando en 5 s…
+2026-05-10 16:03:40,688 | WARNING  | app | [CEPY04] No se puede conectar, reintentando en 5 s…
+2026-05-10 16:04:00,458 | INFO     | app | Iniciando aplicación
+2026-05-10 16:04:00,459 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 16:04:00,466 | INFO     | app | 9 cámara(s) cargada(s)
+2026-05-10 16:04:00,476 | INFO     | app | [CASA] Hilos iniciados
+2026-05-10 16:04:00,480 | INFO     | app | [CEPY01] Hilos iniciados
+2026-05-10 16:04:00,486 | INFO     | app | [CEPY02] Hilos iniciados
+2026-05-10 16:04:00,490 | INFO     | app | [CEPY03] Hilos iniciados
+2026-05-10 16:04:00,496 | INFO     | app | [CEPY04] Hilos iniciados
+2026-05-10 16:04:00,500 | INFO     | app | [CEPY05] Hilos iniciados
+2026-05-10 16:04:00,506 | INFO     | app | [CEPY06] Hilos iniciados
+2026-05-10 16:04:00,515 | INFO     | app | [CEPY07] Hilos iniciados
+2026-05-10 16:04:00,518 | INFO     | app | [CEPY08] Hilos iniciados
+2026-05-10 16:04:02,644 | INFO     | app | [CASA] Conectada
+2026-05-10 16:04:32,679 | WARNING  | app | [CEPY02] No se puede conectar, reintentando en 5 s…
+2026-05-10 16:04:52,812 | INFO     | app | Iniciando aplicación
+2026-05-10 16:04:52,815 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 16:04:52,817 | INFO     | app | 9 cámara(s) cargada(s)
+2026-05-10 16:04:52,830 | INFO     | app | [CASA] Hilos iniciados
+2026-05-10 16:04:52,833 | INFO     | app | [CEPY01] Hilos iniciados
+2026-05-10 16:04:52,835 | INFO     | app | [CEPY02] Hilos iniciados
+2026-05-10 16:04:52,854 | INFO     | app | [CEPY03] Hilos iniciados
+2026-05-10 16:04:52,870 | INFO     | app | [CEPY04] Hilos iniciados
+2026-05-10 16:04:52,872 | INFO     | app | [CEPY05] Hilos iniciados
+2026-05-10 16:04:52,874 | INFO     | app | [CEPY06] Hilos iniciados
+2026-05-10 16:04:52,882 | INFO     | app | [CEPY07] Hilos iniciados
+2026-05-10 16:04:52,904 | INFO     | app | [CEPY08] Hilos iniciados
+2026-05-10 16:04:55,322 | INFO     | app | [CASA] Stream abierto
+2026-05-10 16:05:25,348 | WARNING  | app | [CEPY01] No conecta — reintentando en 5 s...
+2026-05-10 16:05:55,423 | WARNING  | app | [CEPY03] No conecta — reintentando en 5 s...
+2026-05-10 16:06:25,482 | WARNING  | app | [CEPY05] No conecta — reintentando en 5 s...
+2026-05-10 16:06:55,489 | WARNING  | app | [CEPY07] No conecta — reintentando en 5 s...
+2026-05-10 16:07:25,558 | WARNING  | app | [CEPY02] No conecta — reintentando en 5 s...
+2026-05-10 16:07:55,622 | WARNING  | app | [CEPY04] No conecta — reintentando en 5 s...
+2026-05-10 16:08:25,655 | WARNING  | app | [CEPY06] No conecta — reintentando en 5 s...
+2026-05-10 16:08:55,658 | WARNING  | app | [CEPY08] No conecta — reintentando en 5 s...
+2026-05-10 16:08:55,725 | INFO     | app | [CASA] Nuevo video diario -> capturas/videos/CASA/2026-05-10_CASA.mp4
+2026-05-10 16:09:51,331 | INFO     | app | Iniciando aplicación
+2026-05-10 16:09:51,336 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 16:09:51,367 | INFO     | app | 9 cámara(s) cargada(s)
+2026-05-10 16:09:51,382 | INFO     | app | [CASA] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.1.105:554/stream1
+2026-05-10 16:09:51,394 | INFO     | app | [CEPY01] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.153:554/stream1
+2026-05-10 16:09:51,403 | INFO     | app | [CEPY02] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.76:554/stream1
+2026-05-10 16:09:51,413 | INFO     | app | [CEPY03] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.108:554/stream1
+2026-05-10 16:09:51,424 | INFO     | app | [CEPY04] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.56:554/stream1
+2026-05-10 16:09:51,437 | INFO     | app | [CEPY05] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.169:554/stream1
+2026-05-10 16:09:51,448 | INFO     | app | [CEPY06] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.107:554/stream1
+2026-05-10 16:09:51,464 | INFO     | app | [CEPY07] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.71:554/stream1
+2026-05-10 16:09:51,479 | INFO     | app | [CEPY08] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.60:554/stream1
+2026-05-10 16:09:53,456 | INFO     | app | [CASA] Stream abierto
+2026-05-10 16:10:23,563 | WARNING  | app | [CEPY01] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.153:554/stream1) — reintentando en 5 s...
+2026-05-10 16:10:53,638 | WARNING  | app | [CEPY04] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.56:554/stream1) — reintentando en 5 s...
+2026-05-10 16:11:23,742 | WARNING  | app | [CEPY06] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.107:554/stream1) — reintentando en 5 s...
+2026-05-10 16:11:53,794 | WARNING  | app | [CEPY08] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.60:554/stream1) — reintentando en 5 s...
+2026-05-10 16:11:53,799 | INFO     | app | [CASA] Nuevo video diario -> capturas/videos/CASA/2026-05-10_CASA.mp4
+2026-05-10 16:11:58,722 | WARNING  | app | [CASA] Perdida de señal — reconectando...
+2026-05-10 16:12:23,893 | WARNING  | app | [CEPY05] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.169:554/stream1) — reintentando en 5 s...
+2026-05-10 16:12:53,954 | WARNING  | app | [CEPY07] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.71:554/stream1) — reintentando en 5 s...
+2026-05-10 16:13:23,963 | WARNING  | app | [CEPY02] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.76:554/stream1) — reintentando en 5 s...
+2026-05-10 16:13:54,002 | WARNING  | app | [CEPY03] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.108:554/stream1) — reintentando en 5 s...
+2026-05-10 16:14:24,080 | WARNING  | app | [CEPY01] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.153:554/stream1) — reintentando en 5 s...
+2026-05-10 16:14:26,146 | INFO     | app | [CASA] Stream abierto
+2026-05-10 19:02:59,887 | INFO     | app | Iniciando aplicación
+2026-05-10 19:02:59,890 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 19:02:59,902 | INFO     | app | 9 cámara(s) cargada(s)
+2026-05-10 19:02:59,906 | INFO     | app | [CASA] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.1.105:554/stream1
+2026-05-10 19:02:59,911 | INFO     | app | [CEPY01] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.153:554/stream1
+2026-05-10 19:02:59,913 | INFO     | app | [CEPY02] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.76:554/stream1
+2026-05-10 19:02:59,919 | INFO     | app | [CEPY03] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.108:554/stream1
+2026-05-10 19:02:59,923 | INFO     | app | [CEPY04] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.56:554/stream1
+2026-05-10 19:02:59,930 | INFO     | app | [CEPY05] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.169:554/stream1
+2026-05-10 19:02:59,933 | INFO     | app | [CEPY06] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.107:554/stream1
+2026-05-10 19:02:59,938 | INFO     | app | [CEPY07] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.71:554/stream1
+2026-05-10 19:02:59,941 | INFO     | app | [CEPY08] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.60:554/stream1
+2026-05-10 19:03:02,602 | INFO     | app | [CASA] Stream abierto
+2026-05-10 19:03:30,641 | ERROR    | app | Exception on /auth/login [POST]
+Traceback (most recent call last):
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/javier/PycharmProjects/aprende_camaras_python/flask/camaras_todas_ip07_claude/routes_auth.py", line 22, in login
+    return redirect(url_for('camaras'))
+                    ~~~~~~~^^^^^^^^^^^
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/helpers.py", line 239, in url_for
+    return current_app.url_for(
+           ~~~~~~~~~~~~~~~~~~~^
+        endpoint,
+        ^^^^^^^^^
+    ...<4 lines>...
+        **values,
+        ^^^^^^^^^
+    )
+    ^
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 1121, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/flask/app.py", line 1110, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+        endpoint,
+    ...<3 lines>...
+        force_external=_external,
+    )
+  File "/home/javier/PycharmProjects/aprende_camaras_python/.venv/lib/python3.13/site-packages/werkzeug/routing/map.py", line 901, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'camaras'. Did you mean 'vista_camaras' instead?
+2026-05-10 19:03:32,671 | WARNING  | app | [CEPY01] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.153:554/stream1) — reintentando en 5 s...
+2026-05-10 19:04:02,709 | WARNING  | app | [CEPY03] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.108:554/stream1) — reintentando en 5 s...
+2026-05-10 19:04:32,733 | WARNING  | app | [CEPY05] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.169:554/stream1) — reintentando en 5 s...
+2026-05-10 19:05:02,763 | WARNING  | app | [CEPY07] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.71:554/stream1) — reintentando en 5 s...
+2026-05-10 19:05:32,797 | WARNING  | app | [CEPY02] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.76:554/stream1) — reintentando en 5 s...
+2026-05-10 19:06:02,823 | WARNING  | app | [CEPY04] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.56:554/stream1) — reintentando en 5 s...
+2026-05-10 19:06:32,842 | WARNING  | app | [CEPY06] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.107:554/stream1) — reintentando en 5 s...
+2026-05-10 19:06:47,890 | INFO     | app | Iniciando aplicación
+2026-05-10 19:06:47,891 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 19:06:47,896 | INFO     | app | 9 cámara(s) cargada(s)
+2026-05-10 19:06:47,906 | INFO     | app | [CASA] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.1.105:554/stream1
+2026-05-10 19:06:47,909 | INFO     | app | [CEPY01] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.153:554/stream1
+2026-05-10 19:06:47,915 | INFO     | app | [CEPY02] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.76:554/stream1
+2026-05-10 19:06:47,917 | INFO     | app | [CEPY03] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.108:554/stream1
+2026-05-10 19:06:47,920 | INFO     | app | [CEPY04] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.56:554/stream1
+2026-05-10 19:06:47,926 | INFO     | app | [CEPY05] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.169:554/stream1
+2026-05-10 19:06:47,931 | INFO     | app | [CEPY06] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.107:554/stream1
+2026-05-10 19:06:47,939 | INFO     | app | [CEPY07] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.71:554/stream1
+2026-05-10 19:06:47,946 | INFO     | app | [CEPY08] Hilos iniciados — URL: rtsp://cepy2026:Castelar2026@192.168.60.60:554/stream1
+2026-05-10 19:06:50,007 | INFO     | app | [CASA] Stream abierto
+2026-05-10 19:07:20,059 | WARNING  | app | [CEPY01] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.153:554/stream1) — reintentando en 5 s...
+2026-05-10 19:07:50,082 | WARNING  | app | [CEPY03] No conecta (rtsp://cepy2026:Castelar2026@192.168.60.108:554/stream1) — reintentando en 5 s...

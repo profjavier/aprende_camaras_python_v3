@@ -1,0 +1,147 @@
+# camara.py
+import threading
+import time
+import os
+import datetime
+import cv2
+
+class Camara:
+
+    UNIDAD_CAPTURAS = "/home/javier/ssd"
+
+    def __init__(self, app):
+        self.app_flask = app
+        self.frames = {}
+        self.locks = {}
+        self.camaras_stream = {}
+        self.camaras_config = []
+        self.ultima_fecha_captura = {}
+
+    def capturar_camara(self, cam):
+        cam_id = cam["id"]
+
+        while True:
+            cap = cv2.VideoCapture(self.get_rtsp(cam), cv2.CAP_FFMPEG)
+
+            if not cap.isOpened():
+                self.app_flask.logger.warning(f"No conecta cámara {cam_id}")
+                time.sleep(2)
+                continue
+
+            while True:
+                success, frame = cap.read()
+
+                if not success or frame is None:
+                    self.app_flask.logger.warning(f"Cámara {cam_id} sin frame / caída")
+                    cap.release()
+                    break
+
+                try:
+                    _, buffer = cv2.imencode('.jpg', frame)
+                    buffer_jpeg = buffer.tobytes()
+                    hoy = datetime.date.today()
+                    ultima = self.ultima_fecha_captura.get(cam_id)
+
+                    if ultima != hoy:
+                        self.ultima_fecha_captura[cam_id] = hoy
+                        self.guardar_captura(cam_id, buffer_jpeg)
+                except Exception:
+                    continue
+
+                with self.locks[cam_id]:
+                    self.frames[cam_id] = buffer_jpeg
+
+                time.sleep(0.03)
+
+
+
+    # def iniciar_hilos_camaras(self):
+    #     for cam in self.camaras_config:
+    #         t = threading.Thread(
+    #             target=self.capturar_camara,
+    #             args=(cam,),
+    #             daemon=True
+    #         )
+    #         t.start()
+
+
+    def inicializar_camaras(self):
+
+        # self.camaras_config = self.cargar_camaras("config_camaras.cfg")
+
+        for cam in self.camaras_config:
+            cam_id = cam["id"]
+            self.ultima_fecha_captura[cam_id] = None
+            # frames[cam_id] = None
+            # locks[cam_id] = threading.Lock()
+            # self.frames.setdefault(cam_id, None)
+            # self.locks.setdefault(cam_id, threading.Lock())
+            self.frames[cam_id] = None
+            self.locks[cam_id] = threading.Lock()
+
+            t = threading.Thread(
+                target=self.capturar_camara,
+                args=(cam,),
+                daemon=True
+            )
+            t.start()
+
+    def cargar_camaras(self, ruta):
+        camaras = []
+
+        self.app_flask.logger.info(f"Cargando cámaras desde {ruta}")
+
+        try:
+            with open(ruta, "r") as f:
+                for linea in f:
+                    linea = linea.strip()
+                    if not linea:
+                        continue
+
+                    id_cam, ip, mac, port, user, password = linea.split(":")
+
+                    camaras.append({
+                        "id": id_cam,
+                        "ip": ip,
+                        "mac": mac,
+                        "port": int(port),
+                        "user": user,
+                        "password": password
+                    })
+            self.app_flask.logger.info(f"Camaras cargadas")
+        except Exception as e:
+            self.app_flask.logger.exception("Error cargando cámaras")
+
+        return camaras
+
+    def get_rtsp(self, cam):
+        return f"rtsp://{cam['user']}:{cam['password']}@{cam['ip']}:{cam['port']}/Streaming/stream2"
+
+    def generar_frames(self, cam_id):
+        while True:
+            with self.locks[cam_id]:
+                frame = self.frames.get(cam_id)
+
+            if frame is None:
+                time.sleep(0.1)
+                continue
+
+            yield (
+                    b'--frame\r\n'
+                    b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n'
+            )
+
+    def guardar_captura(self, cam_id, frame):
+        base_dir = os.path.join(self.UNIDAD_CAPTURAS, "capturas")
+        pathname = os.path.join(base_dir, cam_id)
+        os.makedirs(pathname, exist_ok=True)
+
+        fecha = datetime.datetime.now()
+        nombre = fecha.strftime("%Y-%m-%d_%H-%M-%S.jpg")
+        ruta = os.path.join(pathname, nombre)
+
+        try:
+            with open(ruta, "wb") as f:
+                f.write(frame)
+        except Exception as e:
+            self.app_flask.logger.error(f"Error guardando captura {cam_id}: {e}")

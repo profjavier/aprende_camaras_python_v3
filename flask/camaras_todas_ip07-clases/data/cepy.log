@@ -1,0 +1,179 @@
+2026-05-10 11:04:45,065 | INFO     | app | Iniciando aplicación
+2026-05-10 11:04:45,070 | INFO     | app | Inicializando cámaras
+2026-05-10 11:04:45,071 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:04:45,074 | INFO     | app | Camaras cargadas
+2026-05-10 11:04:45,079 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:05:17,686 | INFO     | app | Iniciando aplicación
+2026-05-10 11:05:17,686 | INFO     | app | Inicializando cámaras
+2026-05-10 11:05:17,687 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:05:17,687 | INFO     | app | Camaras cargadas
+2026-05-10 11:05:17,687 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:06:20,367 | INFO     | app | Iniciando aplicación
+2026-05-10 11:06:20,368 | INFO     | app | Inicializando cámaras
+2026-05-10 11:06:20,368 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:06:20,369 | INFO     | app | Camaras cargadas
+2026-05-10 11:06:20,370 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:07:25,632 | INFO     | app | Iniciando aplicación
+2026-05-10 11:07:25,633 | INFO     | app | Inicializando cámaras
+2026-05-10 11:07:25,633 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:07:25,634 | INFO     | app | Camaras cargadas
+2026-05-10 11:07:25,634 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:07:27,804 | INFO     | app | Conectando cámara CEPY01 (192.168.60.153)
+2026-05-10 11:07:57,858 | INFO     | app | Conectando cámara CEPY02 (192.168.60.76)
+2026-05-10 11:08:27,941 | INFO     | app | Conectando cámara CEPY03 (192.168.60.108)
+2026-05-10 11:08:57,946 | INFO     | app | Conectando cámara CEPY04 (192.168.60.56)
+2026-05-10 11:09:27,975 | INFO     | app | Conectando cámara CEPY05 (192.168.60.169)
+2026-05-10 11:09:58,037 | INFO     | app | Conectando cámara CEPY06 (192.168.60.107)
+2026-05-10 11:10:28,072 | INFO     | app | Conectando cámara CEPY07 (192.168.60.71)
+2026-05-10 11:10:58,090 | INFO     | app | Conectando cámara CEPY08 (192.168.60.60)
+2026-05-10 11:18:33,206 | INFO     | app | Iniciando aplicación
+2026-05-10 11:18:33,207 | INFO     | app | Inicializando cámaras
+2026-05-10 11:18:33,208 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:18:33,208 | INFO     | app | Camaras cargadas
+2026-05-10 11:18:33,209 | INFO     | app | Conectando cámara CASA (192.168.1.105)
+2026-05-10 11:18:35,363 | INFO     | app | Conectando cámara CEPY01 (192.168.60.153)
+2026-05-10 11:19:05,433 | INFO     | app | Conectando cámara CEPY02 (192.168.60.76)
+2026-05-10 11:19:35,490 | INFO     | app | Conectando cámara CEPY03 (192.168.60.108)
+2026-05-10 11:20:05,571 | INFO     | app | Conectando cámara CEPY04 (192.168.60.56)
+2026-05-10 11:20:35,644 | INFO     | app | Conectando cámara CEPY05 (192.168.60.169)
+2026-05-10 11:21:05,713 | INFO     | app | Conectando cámara CEPY06 (192.168.60.107)
+2026-05-10 11:21:35,781 | INFO     | app | Conectando cámara CEPY07 (192.168.60.71)
+2026-05-10 11:22:05,850 | INFO     | app | Conectando cámara CEPY08 (192.168.60.60)
+2026-05-10 11:52:07,339 | INFO     | app | Iniciando aplicación
+2026-05-10 11:52:07,339 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:52:07,340 | INFO     | app | Camaras cargadas
+2026-05-10 11:52:39,757 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 11:53:09,807 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 11:53:39,868 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 11:54:09,874 | WARNING  | app | No conecta cámara CEPY04
+2026-05-10 11:54:39,923 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 11:54:48,674 | INFO     | app | Iniciando aplicación
+2026-05-10 11:54:48,675 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:54:48,677 | INFO     | app | Camaras cargadas
+2026-05-10 11:55:20,943 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 11:55:46,504 | INFO     | app | Iniciando aplicación
+2026-05-10 11:55:46,505 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 11:55:46,506 | INFO     | app | Camaras cargadas
+2026-05-10 11:56:18,771 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 12:27:44,062 | INFO     | app | Iniciando aplicación
+2026-05-10 12:27:44,064 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 12:27:44,065 | INFO     | app | Camaras cargadas
+2026-05-10 12:28:16,239 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 12:28:46,278 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 12:29:16,380 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 12:29:46,385 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 12:30:16,561 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 12:30:35,651 | INFO     | app | Iniciando aplicación
+2026-05-10 12:30:35,651 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 12:30:35,653 | INFO     | app | Camaras cargadas
+2026-05-10 13:08:49,134 | INFO     | app | Iniciando aplicación
+2026-05-10 13:08:49,140 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 13:08:49,141 | INFO     | app | Camaras cargadas
+2026-05-10 13:09:21,514 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:09:51,571 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:10:21,626 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 13:10:51,683 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 13:11:21,806 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 13:11:51,816 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:12:21,923 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:12:51,966 | WARNING  | app | No conecta cámara CEPY04
+2026-05-10 13:13:22,054 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 13:13:52,128 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 13:14:22,190 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 13:14:52,250 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:15:22,343 | WARNING  | app | No conecta cámara CEPY04
+2026-05-10 13:15:52,258 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 13:16:22,304 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 13:22:42,668 | INFO     | app | Iniciando aplicación
+2026-05-10 13:22:42,668 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 13:22:42,670 | INFO     | app | Camaras cargadas
+2026-05-10 13:23:15,063 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:23:45,169 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:24:15,266 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 13:24:45,254 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 13:25:15,330 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 13:25:45,431 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:26:15,832 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:26:45,538 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 13:33:38,668 | INFO     | app | Iniciando aplicación
+2026-05-10 13:33:38,669 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-10 13:33:38,669 | INFO     | app | Camaras cargadas
+2026-05-10 13:34:10,962 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:34:41,047 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:35:11,119 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 13:35:41,209 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 13:36:11,298 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 13:36:41,397 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:37:11,472 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:37:41,560 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 13:38:11,640 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 13:38:41,720 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 13:39:11,810 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:39:41,890 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:40:11,904 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 13:40:41,989 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 13:41:12,079 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 13:41:42,169 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:42:12,268 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:42:42,349 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 13:43:12,449 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 13:43:42,539 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 13:44:12,628 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:44:42,710 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:45:12,805 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 13:45:42,894 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 13:46:12,973 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 13:46:43,070 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:47:13,166 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:47:43,234 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 13:48:13,320 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 13:48:43,410 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 13:49:13,485 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:49:43,563 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:50:13,661 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 13:50:43,760 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 13:51:13,850 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 13:51:43,931 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 13:52:13,941 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:52:44,030 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 13:53:14,111 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 13:53:44,206 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 13:54:14,304 | WARNING  | app | No conecta cámara CEPY04
+2026-05-10 13:54:44,405 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 13:55:14,486 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 13:55:44,562 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:56:14,661 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 13:56:44,744 | WARNING  | app | No conecta cámara CEPY04
+2026-05-10 13:57:14,809 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 13:57:44,894 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 13:58:14,896 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 13:58:44,976 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 13:59:15,065 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 13:59:45,141 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 14:00:15,235 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 14:00:45,320 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 14:01:15,410 | WARNING  | app | No conecta cámara CEPY02
+2026-05-10 14:01:45,415 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 14:02:15,485 | WARNING  | app | No conecta cámara CEPY04
+2026-05-10 14:02:45,566 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 14:03:15,657 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 14:03:45,660 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 14:04:15,758 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 14:04:45,840 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 14:05:15,927 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 14:05:46,015 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 14:06:16,102 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 14:06:46,176 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 14:07:16,260 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 14:07:46,352 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 14:08:16,358 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 14:08:46,451 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 14:09:16,457 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 14:09:46,559 | WARNING  | app | No conecta cámara CEPY06
+2026-05-10 14:10:16,642 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 14:10:46,718 | WARNING  | app | No conecta cámara CEPY08
+2026-05-10 14:11:16,806 | WARNING  | app | No conecta cámara CEPY07
+2026-05-10 14:11:46,894 | WARNING  | app | No conecta cámara CEPY05
+2026-05-10 14:12:16,975 | WARNING  | app | No conecta cámara CEPY01
+2026-05-10 14:12:47,065 | WARNING  | app | No conecta cámara CEPY03
+2026-05-10 14:13:17,089 | WARNING  | app | No conecta cámara CEPY08
