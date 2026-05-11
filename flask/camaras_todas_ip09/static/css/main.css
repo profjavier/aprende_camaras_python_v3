@@ -1,0 +1,41 @@
+:root {
+  --bs-primary: #731938;
+  --bs-primary-rgb: 115, 25, 56;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+
+  --bs-btn-hover-bg: #5c142c;
+  --bs-btn-hover-border-color: #5c142c;
+
+  --bs-btn-active-bg: #4a1023;
+  --bs-btn-active-border-color: #4a1023;
+}
+
+
+.navbar.bg-primary .nav-link{
+  color: rgba(255, 255, 255, 0.75);
+  transition: color 0.2s ease;
+}
+
+.navbar.bg-primary .navbar-brand {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.3px;
+}
+
+.navbar.bg-primary .nav-link:hover {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.navbar.bg-primary .nav-link.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+.cepy-bg-titulo {
+    background-color: #e76f51;
+}
