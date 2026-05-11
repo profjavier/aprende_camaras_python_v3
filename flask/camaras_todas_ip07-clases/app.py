@@ -179,7 +179,7 @@ with app.app_context():
 @login_required
 @role_required('ADMIN')
 def index():
-    return render_template("index.html", camaras=camaras_config)
+    return render_template("index.html-BASE", camaras=camaras_config)
 
 @app.route('/cam/<cam_id>')
 @login_required

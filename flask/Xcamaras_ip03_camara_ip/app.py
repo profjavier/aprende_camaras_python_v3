@@ -17,7 +17,7 @@ app = Flask(__name__)
 app.config.from_object(Config)
 
 
-# Captura de la webcam (0 = webcam por defecto)
+# Captura de la webcam.py (0 = webcam.py por defecto)
 camera = cv2.VideoCapture(
     "rtsp://cepy2026:Castelar2026@192.168.60.153:554/Streaming/stream2"
 )
@@ -45,7 +45,7 @@ login_manager.login_view = 'auth.login'
 
 @login_manager.user_loader
 def load_user(user_id):
-    return User.query.get(int(user_id))
+    return db.session.get(User, int(user_id))
 
 # registrar blueprints
 app.register_blueprint(auth_bp)

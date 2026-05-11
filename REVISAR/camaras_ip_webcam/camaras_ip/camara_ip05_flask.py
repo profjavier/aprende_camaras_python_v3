@@ -36,7 +36,7 @@ def index():
     # Lista solo la última foto capturada
     fotos = sorted(os.listdir(SAVE_DIR))
     ultima = fotos[-1] if fotos else None
-    return render_template('index.html', ultima_foto=ultima)
+    return render_template('index.html-BASE', ultima_foto=ultima)
 
 @app.route('/video_feed')
 def video_feed():

@@ -1,0 +1,5 @@
+pip install flask opencv-python
+pip install flask
+pip install flask_login
+pip install flask_sqlalchemy
+pip install flask_wtf

@@ -94,7 +94,7 @@ with app.app_context():
 @login_required
 @role_required("ADMIN")
 def index():
-    return render_template("index.html", camaras=list(camaras.values()))
+    return render_template("index.html-BASE", camaras=list(camaras.values()))
 
 
 @app.route("/camaras")

@@ -1,0 +1,5 @@
+Voersión 0.
+
+Esta versión solo tiene el esqueleto.
+Muestra login y menu.
+No muestra cámara

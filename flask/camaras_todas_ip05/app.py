@@ -73,7 +73,7 @@ login_manager.login_view = 'auth.login'
 
 @login_manager.user_loader
 def load_user(user_id):
-    return User.query.get(int(user_id))
+    return db.session.get(User, int(user_id))
 
 # registrar blueprints
 app.register_blueprint(auth_bp)
@@ -85,7 +85,7 @@ with app.app_context():
 @login_required
 @role_required('ADMIN')
 def index():
-    return render_template("index.html", camaras=camaras_config)
+    return render_template("index.html-BASE", camaras=camaras_config)
 
 @app.route('/cam/<cam_id>')
 @login_required

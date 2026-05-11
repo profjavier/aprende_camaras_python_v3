@@ -1,0 +1,5 @@
+Esta version despues de hacer login muestra el contenido de la camara en el navegador, no muestra el menu.
+Esto es debido a que devuelve
+def index():
+    return Response(generar_frames(),
+                    mimetype='multipart/x-mixed-replace; boundary=frame')
