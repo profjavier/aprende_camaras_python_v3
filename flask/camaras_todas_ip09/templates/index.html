@@ -40,3 +40,19 @@
 </div>
 
 {% endblock %}
+
+
+{% block scripts %}
+<script>
+function pingServer() {
+    fetch("/ping")
+        .catch(err => console.log("ping error", err));
+}
+
+// primer ping inmediato
+pingServer();
+
+// luego cada 10 segundos
+setInterval(pingServer, 10000);
+</script>
+{% endblock %}

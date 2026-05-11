@@ -89,6 +89,10 @@ def camara(cam_id):
 def camaras():
     return render_template("camaras.html", camaras=camaras_config)
 
+@app.route("/ping")
+def ping():
+    camara.ping()
+    return "ok"
 
 
 @app.errorhandler(404)

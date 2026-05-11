@@ -4,280 +4,193 @@ import os
 import datetime
 import cv2
 import numpy as np
-import queue
+
+os.environ["OPENCV_FFMPEG_CAPTURE_OPTIONS"] = (
+    "rtsp_transport;tcp|"
+    "stimeout;3000000|"
+    "fflags;nobuffer|"
+    "flags;low_delay"
+)
 
 
 class Camara:
 
     UNIDAD_CAPTURAS = "/home/javier/ssd"
-    # Añade al video secuencias de frames
-    NUM_FRAMES_TMP = 10
+    TIEMPO_INACTIVIDAD = 30
 
     def __init__(self, app):
         self.app_flask = app
 
         self.frames = {}
         self.locks = {}
-
-        self.camaras_stream = {}
         self.camaras_config = []
 
-        # snapshot / estado
-        self.ultima_fecha_captura = {}
+        self.capture_threads = {}
+        self.stop_flags = {}
 
-        # vídeo diario
-        self.video_writer = {}
-        self.video_dia_actual = {}
+        # 🔴 CONTROL GLOBAL POR PING
+        self.last_ping = time.time()
+        self.captura_activa = False
+        self.estado_lock = threading.Lock()
 
-        self.frame_count = {}
-        self.video_queues = {}
-
-
-    # -------------------------
-    # RTSP
-    # -------------------------
-    def get_rtsp(self, cam):
-        return f"rtsp://{cam['user']}:{cam['password']}@{cam['ip']}:{cam['port']}/Streaming/stream2"
+        self.watchdog_started = False
 
     # -------------------------
-    # CAPTURA PRINCIPAL
+    # PING (LO ACTUALIZA EL ENDPOINT)
+    # -------------------------
+    def ping(self):
+        with self.estado_lock:
+            self.last_ping = time.time()
+            if not self.captura_activa:
+                print("🟢 ping recibido → activando sistema")
+                self.captura_activa = True
+
+    # -------------------------
+    # WATCHDOG GLOBAL
+    # -------------------------
+    def watchdog(self):
+        while True:
+            time.sleep(2)
+
+            with self.estado_lock:
+                inactivo = (time.time() - self.last_ping) > self.TIEMPO_INACTIVIDAD
+
+                if inactivo and self.captura_activa:
+                    print("🔴 inactividad → apagando TODO RTSP")
+                    self.captura_activa = False
+
+                elif not inactivo and not self.captura_activa:
+                    print("🟢 actividad → reactivando sistema")
+                    self.captura_activa = True
+
+    # -------------------------
+    # RTSP LOOP
     # -------------------------
     def capturar_camara(self, cam):
+
         cam_id = cam["id"]
+        cap = None
 
         while True:
-            cap = cv2.VideoCapture(self.get_rtsp(cam), cv2.CAP_FFMPEG)
 
-            if not cap.isOpened():
-                self.app_flask.logger.warning(f"No conecta cámara {cam_id}")
-                time.sleep(2)
+            # 🔴 BLOQUEO GLOBAL
+            if not self.captura_activa:
+                if cap:
+                    print(f"🛑 cerrando RTSP {cam_id}")
+                    cap.release()
+                    cap = None
+
+                time.sleep(1)
                 continue
 
-            while True:
-                success, frame = cap.read()
+            # 🔴 abrir conexión solo si hace falta
+            if cap is None:
+                print(f"📡 abriendo RTSP {cam_id}")
+                cap = cv2.VideoCapture(self.get_rtsp(cam), cv2.CAP_FFMPEG)
 
-                if not success or frame is None:
-                    self.app_flask.logger.warning(f"Cámara {cam_id} sin frame / caída")
-                    cap.release()
-                    break
-
-                # -------------------------------------------------
-                # VIDEO DIARIO
-                # SOLO CADA 10 FRAMES
-                # -------------------------------------------------
-                try:
-
-                    self.frame_count[cam_id] += 1
-
-                    # escribir 1 de cada 10 frames
-                    if self.frame_count[cam_id] % self.NUM_FRAMES_TMP == 0:
-
-                        try:
-
-                            self.frame_count[cam_id] += 1
-
-                            if self.frame_count[cam_id] % self.NUM_FRAMES_TMP == 0:
-
-                                if not self.video_queues[cam_id].full():
-
-                                    self.video_queues[cam_id].put_nowait(
-                                        frame.copy()
-                                    )
-
-                        except Exception as e:
-                            self.app_flask.logger.error(
-                                f"Error cola vídeo {cam_id}: {e}"
-                            )
-
-                except Exception as e:
-                    self.app_flask.logger.error(
-                        f"Error vídeo {cam_id}: {e}"
-                    )
-
-                # -------------------------
-                # STREAM WEB
-                # -------------------------
-                try:
-                    _, buffer = cv2.imencode('.jpg', frame)
-                    buffer_jpeg = buffer.tobytes()
-
-                    with self.locks[cam_id]:
-                        self.frames[cam_id] = buffer_jpeg
-
-                except Exception:
+                if not cap.isOpened():
+                    print("❌ error RTSP")
+                    cap = None
+                    time.sleep(2)
                     continue
 
-                time.sleep(0.03)
+            success, frame = cap.read()
 
-    # -------------------------
-    # VIDEO WRITER DIARIO
-    # -------------------------
-    '''def get_video_writer(self, cam_id, frame):
-        hoy = datetime.date.today()
+            if not success:
+                print("⚠️ reconectando RTSP")
+                cap.release()
+                cap = None
+                continue
 
-        # cambio de día → nuevo archivo
-        if self.video_dia_actual.get(cam_id) != hoy:
+            _, buffer = cv2.imencode(".jpg", frame)
 
-            # cerrar anterior
-            if cam_id in self.video_writer:
-                try:
-                    self.video_writer[cam_id].release()
-                except:
-                    pass
-
-            base_dir = os.path.join(self.UNIDAD_CAPTURAS, "videos", cam_id)
-            os.makedirs(base_dir, exist_ok=True)
-
-            filename = hoy.strftime("%Y-%m-%d.mp4")
-            ruta = os.path.join(base_dir, filename)
-
-            height, width, _ = frame.shape
-
-            fourcc = cv2.VideoWriter.fourcc(*'mp4v')
-            # fourcc = cv2.VideoWriter.fourcc(*'MJPG')
-
-            writer = cv2.VideoWriter(
-                ruta,
-                fourcc,
-                10,
-                (width, height)
-            )
-
-            self.video_writer[cam_id] = writer
-            self.video_dia_actual[cam_id] = hoy
-
-        return self.video_writer[cam_id]'''
-
-    #RASPBERRY
-    def get_video_writer(self, cam_id, frame):
-
-        hoy = datetime.date.today()
-
-        if self.video_dia_actual.get(cam_id) != hoy:
-
-            # cerrar anterior
-            if cam_id in self.video_writer:
-                try:
-                    self.video_writer[cam_id].release()
-                except:
-                    pass
-
-            base_dir = os.path.join(
-                self.UNIDAD_CAPTURAS,
-                "videos",
-                cam_id
-            )
-
-            os.makedirs(base_dir, exist_ok=True)
-
-            filename = hoy.strftime("%Y-%m-%d.avi")
-            ruta = os.path.join(base_dir, filename)
-
-            height, width = frame.shape[:2]
-
-            # MUCHO MÁS COMPATIBLE EN RPI
-            #fourcc = cv2.VideoWriter_fourcc(*'XVID')
-            fourcc = cv2.VideoWriter.fourcc(*'MJPG')
-
-            writer = cv2.VideoWriter(
-                ruta,
-                fourcc,
-                10,
-                (width, height)
-            )
-
-            # validar
-            if not writer.isOpened():
-                self.app_flask.logger.error(
-                    f"No se pudo abrir writer: {ruta}"
-                )
-                return None
-
-            self.video_writer[cam_id] = writer
-            self.video_dia_actual[cam_id] = hoy
-
-            self.app_flask.logger.info(
-                f"Grabando vídeo: {ruta}"
-            )
-
-        return self.video_writer.get(cam_id)
+            with self.locks[cam_id]:
+                self.frames[cam_id] = buffer.tobytes()
 
     # -------------------------
     # STREAM FLASK
     # -------------------------
     def generar_frames(self, cam_id):
-        while True:
-            with self.locks.get(cam_id, threading.Lock()):
-                frame = self.frames.get(cam_id)
 
-            if frame is None:
-                time.sleep(0.1)
-                continue
+        cam = next(c for c in self.camaras_config if c["id"] == cam_id)
 
-            yield (
-                b'--frame\r\n'
-                b'Content-Type: image/jpeg\r\n\r\n' + frame + b'\r\n'
-            )
+        # self.ping()
 
-    # -------------------------
-    # SNAPSHOT MANUAL
-    # -------------------------
-    def capturar_snapshot(self, cam_id):
-        with self.locks.get(cam_id, threading.Lock()):
-            frame = self.frames.get(cam_id)
+        self.start_capture_if_needed(cam)
 
-        if frame is None:
-            return None
+        try:
+            while True:
 
-        base_dir = os.path.join(self.UNIDAD_CAPTURAS, "capturas", cam_id, "snapshots")
-        os.makedirs(base_dir, exist_ok=True)
+                # self.ping()
 
-        fecha = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S.jpg")
-        ruta = os.path.join(base_dir, fecha)
+                with self.locks[cam_id]:
+                    frame = self.frames.get(cam_id)
 
-        img = cv2.imdecode(
-            np.frombuffer(frame, np.uint8),
-            cv2.IMREAD_COLOR
-        )
+                if frame is None:
+                    time.sleep(0.1)
+                    continue
 
-        cv2.imwrite(ruta, img)
+                yield (
+                    b'--frame\r\n'
+                    b'Content-Type: image/jpeg\r\n\r\n' +
+                    frame +
+                    b'\r\n'
+                )
 
-        return ruta
+        except GeneratorExit:
+            print("👋 cliente desconectado")
 
     # -------------------------
-    # INICIALIZACIÓN
+    # INIT
     # -------------------------
     def inicializar_camaras(self):
 
         for cam in self.camaras_config:
             cam_id = cam["id"]
-            self.frame_count[cam_id] = 0
-            self.video_queues[cam_id] = queue.Queue(maxsize=20)
+
             self.frames[cam_id] = None
             self.locks[cam_id] = threading.Lock()
+            self.stop_flags[cam_id] = False
 
-            self.ultima_fecha_captura[cam_id] = None
-            self.video_dia_actual[cam_id] = None
-
-            t = threading.Thread(
-                target=self.capturar_camara,
-                args=(cam,),
+        if not self.watchdog_started:
+            threading.Thread(
+                target=self.watchdog,
                 daemon=True
-            )
-            t.start()
+            ).start()
 
-            t_video = threading.Thread(
-                target=self.grabador_video,
-                args=(cam_id,),
-                daemon=True
-            )
+            self.watchdog_started = True
 
-            t_video.start()
+    # -------------------------
+    # START CAMARA
+    # -------------------------
+    def start_capture_if_needed(self, cam):
+
+        cam_id = cam["id"]
+
+        if cam_id in self.capture_threads:
+            return
+
+        t = threading.Thread(
+            target=self.capturar_camara,
+            args=(cam,),
+            daemon=True
+        )
+
+        t.start()
+        self.capture_threads[cam_id] = t
+
+    # -------------------------
+    # RTSP URL
+    # -------------------------
+    def get_rtsp(self, cam):
+        return f"rtsp://{cam['user']}:{cam['password']}@{cam['ip']}:{cam['port']}/Streaming/stream2"
+
 
     # -------------------------
     # CONFIG CAMARAS
     # -------------------------
     def cargar_camaras(self, ruta):
+
         camaras = []
 
         self.app_flask.logger.info(f"Cargando cámaras desde {ruta}")
@@ -306,30 +219,3 @@ class Camara:
             self.app_flask.logger.exception("Error cargando cámaras")
 
         return camaras
-
-    def grabador_video(self, cam_id):
-        self.app_flask.logger.info(
-            f"Grabador iniciado {cam_id}"
-        )
-        while True:
-
-            try:
-                frame = self.video_queues[cam_id].get()
-                self.app_flask.logger.info(
-                    f"Frame recibido grabador {cam_id}"
-                )
-                if frame is None:
-                    continue
-
-                writer = self.get_video_writer(
-                    cam_id,
-                    frame
-                )
-
-                if writer is not None:
-                    writer.write(frame)
-
-            except Exception as e:
-                self.app_flask.logger.error(
-                    f"Error grabador {cam_id}: {e}"
-                )
