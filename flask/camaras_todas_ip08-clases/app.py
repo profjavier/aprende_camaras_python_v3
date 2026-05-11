@@ -64,7 +64,7 @@ with app.app_context():
 @role_required('ADMIN')
 def index():
     return render_template(
-        "index.html-BASE",
+        "index.html",
         camaras=stream.get_camaras()
     )
 

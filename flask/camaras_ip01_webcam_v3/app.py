@@ -80,7 +80,7 @@ with app.app_context():
 @login_required
 @role_required('ADMIN')
 def index():
-    return render_template('index.html-BASE')
+    return render_template('index.html')
 
 
 # ---------------------------

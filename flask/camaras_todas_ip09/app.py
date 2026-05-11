@@ -72,7 +72,7 @@ with app.app_context():
 @login_required
 @role_required('ADMIN')
 def index():
-    return render_template("index.html-BASE", camaras=camaras_config)
+    return render_template("index.html", camaras=camaras_config)
 
 @app.route('/cam/<cam_id>')
 @login_required
@@ -128,4 +128,4 @@ if __name__ == '__main__':
 
     camara.inicializar_camaras() 
 
-    app.run(debug=False, port=5000, host="0.0.0.0")
+    app.run(debug=True, port=5000, host="0.0.0.0")
