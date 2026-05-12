@@ -5,7 +5,7 @@ from logging.handlers import RotatingFileHandler
 import logging
 from flask import Flask, render_template, Response
 
-from versiones_flask.camaras_todas_ip10.config_app import ConfigApp
+from config_app import ConfigApp
 from extensions import db, login_manager
 from camaras_config import CamarasConfig
 

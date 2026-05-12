@@ -1,8 +1,10 @@
 sudo apt update
 sudo apt install avahi-daemon
 
+Habilitar servicio para acceder remotamente via dns
 sudo systemctl enable avahi-daemon
 sudo systemctl start avahi-daemon
+sudo systemctl status avahi-daemon
 
 Ver el nombre
 hostname
@@ -14,9 +16,51 @@ http://cepy-server.local
 
 ssh javier@cepy-server.local
 
+Montar ssd externo
 ver ssd montados
 lsblk
 
 para cambiar el nombre
 ln -s /media/javier/5AD8128BD8126613 /home/javier/ssd
 
+Ejecución en linux/raspberry
+...$source .venv/bin/activate
+Si utiliza librerias como scapy (CamarasConfig) es necesario ejecutarlo como root para no tener problema de permisos
+(.venv)...$python app.py (problema de permisos)
+(.venv)...$sudo python app.py (problema de permisos)
+(.venv)...$deactivate
+...#sudo root
+...# source .venv/bin/activate
+(.venv)...#python app.py (OK)
+
+
+Crear servicio raspberry
+sudo nano /etc/systemd/system/camaras.service
+---
+[Unit]
+Description=Aplicacion Camaras IP
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/javier/hd_wd_gris
+
+ExecStart=/home/javier/hd_wd_gris/camaras/.venv/bin/python /home/javier/camaras/hd_wd_gris/app.py
+
+Restart=always
+RestartSec=3
+
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=multi-user.target
+---
+Activar el servicio
+sudo systemctl daemon-reload
+sudo systemctl enable camaras.service
+sudo systemctl start camaras.service
+sudo systemctl status camaras.service
+
+Verr log en tiempo real
+journalctl -u camaras.service -f
