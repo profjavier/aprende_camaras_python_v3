@@ -1,0 +1,49 @@
+<!-- Contenedor de toasts superpuestos en esquina superior derecha -->
+<div class="toast-container position-fixed top-0 end-0 p-3" style="z-index: 1100;">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="toast align-items-center text-bg-{{ category if category in ['success', 'danger', 'warning', 'info'] else 'primary' }} border-0 fade show"
+                     role="alert"
+                     aria-live="assertive"
+                     aria-atomic="true"
+                     data-bs-autohide="true"
+                     data-bs-delay="5000">
+                    <div class="d-flex">
+                        <div class="toast-body">
+                            <i class="fas fa-{% if category == 'success' %}check-circle{% elif category == 'danger' %}exclamation-circle{% elif category == 'warning' %}exclamation-triangle{% else %}info-circle{% endif %} me-2"></i>
+                            {{ message }}
+                        </div>
+                        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+</div>
+
+{% block scripts %}
+<script>
+    // Inicializar todos los toasts automáticamente
+    document.addEventListener('DOMContentLoaded', function() {
+        // Seleccionar todos los toasts que no estén inicializados
+        const toastElements = document.querySelectorAll('.toast');
+
+        toastElements.forEach(function(toastElement) {
+            // Crear nueva instancia de Bootstrap Toast
+            const toast = new bootstrap.Toast(toastElement, {
+                autohide: true,
+                delay: 5000 // 5 segundos
+            });
+
+            // Mostrar el toast
+            toast.show();
+
+            // Opcional: Eliminar del DOM después de ocultarse
+            toastElement.addEventListener('hidden.bs.toast', function() {
+                this.remove();
+            });
+        });
+    });
+</script>
+{% endblock %}

@@ -1,0 +1,183 @@
+2026-05-11 21:14:38,745 | INFO     | app | Iniciando aplicación
+2026-05-11 21:14:38,745 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-11 21:14:38,745 | INFO     | app | Cámaras cargadas
+2026-05-11 21:14:42,032 | ERROR    | app | Exception on / [GET]
+Traceback (most recent call last):
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\.venv\Lib\site-packages\flask\app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\.venv\Lib\site-packages\flask\app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\.venv\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\.venv\Lib\site-packages\flask\app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\.venv\Lib\site-packages\flask_login\utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\flask\camaras_todas_ip09\utils\security.py", line 17, in wrapper
+    return f(*args, **kwargs)
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\flask\camaras_todas_ip09\app.py", line 75, in index
+    return render_template("index.html-BASE", camaras=camaras_config)
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\.venv\Lib\site-packages\flask\templating.py", line 150, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\.venv\Lib\site-packages\jinja2\environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\.venv\Lib\site-packages\jinja2\environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\.venv\Lib\site-packages\jinja2\environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\.venv\Lib\site-packages\jinja2\loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\.venv\Lib\site-packages\flask\templating.py", line 66, in get_source
+    return self._get_source_fast(environment, template)
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\javier\Desktop\CEPY\aprende_camaras_python_v3\.venv\Lib\site-packages\flask\templating.py", line 100, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html-BASE
+2026-05-11 21:15:33,177 | INFO     | app | Iniciando aplicación
+2026-05-11 21:15:33,177 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-11 21:15:33,178 | INFO     | app | Cámaras cargadas
+2026-05-11 21:15:35,018 | INFO     | app | Iniciando aplicación
+2026-05-11 21:15:35,018 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-11 21:15:35,018 | INFO     | app | Cámaras cargadas
+2026-05-11 21:17:56,819 | INFO     | app | Iniciando aplicación
+2026-05-11 21:17:56,819 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-11 21:17:56,819 | INFO     | app | Cámaras cargadas
+2026-05-11 21:17:58,672 | INFO     | app | Iniciando aplicación
+2026-05-11 21:17:58,673 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-11 21:17:58,673 | INFO     | app | Cámaras cargadas
+2026-05-11 21:19:36,289 | INFO     | app | Iniciando aplicación
+2026-05-11 21:19:36,289 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-11 21:19:36,289 | INFO     | app | Cámaras cargadas
+2026-05-11 21:19:38,118 | INFO     | app | Iniciando aplicación
+2026-05-11 21:19:38,119 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-11 21:19:38,119 | INFO     | app | Cámaras cargadas
+2026-05-11 21:19:45,262 | INFO     | app | Iniciando aplicación
+2026-05-11 21:19:45,262 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-11 21:19:45,263 | INFO     | app | Cámaras cargadas
+2026-05-11 21:19:47,106 | INFO     | app | Iniciando aplicación
+2026-05-11 21:19:47,106 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-11 21:19:47,107 | INFO     | app | Cámaras cargadas
+2026-05-12 09:37:44,984 | INFO     | app | Iniciando aplicación
+2026-05-12 09:37:44,984 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-12 09:37:44,985 | INFO     | app | Cámaras cargadas
+2026-05-12 09:37:48,761 | INFO     | app | Iniciando aplicación
+2026-05-12 09:37:48,761 | INFO     | app | Cargando cámaras desde config_camaras.cfg
+2026-05-12 09:37:48,761 | INFO     | app | Cámaras cargadas
+2026-05-12 11:12:17,712 | INFO     | app | Iniciando aplicación
+2026-05-12 11:12:45,054 | INFO     | app | Iniciando aplicación
+2026-05-12 11:12:45,704 | INFO     | app | Iniciando aplicación
+2026-05-12 11:14:20,353 | INFO     | app | Iniciando aplicación
+2026-05-12 11:14:59,183 | INFO     | app | Iniciando aplicación
+2026-05-12 11:15:05,978 | INFO     | app | Iniciando aplicación
+2026-05-12 11:15:44,764 | INFO     | app | Iniciando aplicación
+2026-05-12 11:16:24,651 | INFO     | app | Iniciando aplicación
+2026-05-12 11:16:32,972 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:16:44,037 | ERROR    | app | Error cargando cámaras
+Traceback (most recent call last):
+  File "C:\Users\javier\PycharmProjects\aprende_camaras_python_v3\versiones_flask\camaras_todas_ip10\config\camaras_config.py", line 32, in cargar_camaras
+    with open(ruta_config_lan, "r") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config\\config_lan.cfg'
+2026-05-12 11:16:45,809 | INFO     | app | Iniciando aplicación
+2026-05-12 11:16:59,621 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:17:29,557 | INFO     | app | Iniciando aplicación
+2026-05-12 11:17:33,658 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:17:43,812 | INFO     | app | Iniciando aplicación
+2026-05-12 11:17:47,334 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:22:37,070 | INFO     | app | Iniciando aplicación
+2026-05-12 11:22:59,001 | INFO     | app | Iniciando aplicación
+2026-05-12 11:22:59,001 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:22:59,001 | ERROR    | app | Error cargando cámaras
+Traceback (most recent call last):
+  File "C:\Users\javier\PycharmProjects\aprende_camaras_python_v3\versiones_flask\camaras_todas_ip10\config\camaras_config.py", line 35, in cargar_camaras
+    with open(ruta_config_lan, "r") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config\\config_lan.cfg'
+2026-05-12 11:22:59,678 | INFO     | app | Iniciando aplicación
+2026-05-12 11:22:59,679 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:22:59,679 | ERROR    | app | Error cargando cámaras
+Traceback (most recent call last):
+  File "C:\Users\javier\PycharmProjects\aprende_camaras_python_v3\versiones_flask\camaras_todas_ip10\config\camaras_config.py", line 35, in cargar_camaras
+    with open(ruta_config_lan, "r") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config\\config_lan.cfg'
+2026-05-12 11:24:01,127 | INFO     | app | Iniciando aplicación
+2026-05-12 11:24:01,127 | INFO     | app | Cargando cámaras desde .
+2026-05-12 11:24:03,263 | INFO     | app | Cámaras cargadas
+2026-05-12 11:24:03,867 | INFO     | app | Iniciando aplicación
+2026-05-12 11:24:03,867 | INFO     | app | Cargando cámaras desde .
+2026-05-12 11:24:06,046 | INFO     | app | Cámaras cargadas
+2026-05-12 11:25:33,431 | INFO     | app | Iniciando aplicación
+2026-05-12 11:25:33,431 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:25:33,431 | ERROR    | app | Error cargando cámaras
+Traceback (most recent call last):
+  File "C:\Users\javier\PycharmProjects\aprende_camaras_python_v3\versiones_flask\camaras_todas_ip10\camaras_config.py", line 35, in cargar_camaras
+    with open(ruta_config_lan, "r") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config\\config_lan.cfg'
+2026-05-12 11:25:34,002 | INFO     | app | Iniciando aplicación
+2026-05-12 11:25:34,002 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:25:34,002 | ERROR    | app | Error cargando cámaras
+Traceback (most recent call last):
+  File "C:\Users\javier\PycharmProjects\aprende_camaras_python_v3\versiones_flask\camaras_todas_ip10\camaras_config.py", line 35, in cargar_camaras
+    with open(ruta_config_lan, "r") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config\\config_lan.cfg'
+2026-05-12 11:26:21,236 | INFO     | app | Iniciando aplicación
+2026-05-12 11:26:26,804 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:26:35,069 | ERROR    | app | Error cargando cámaras
+Traceback (most recent call last):
+  File "C:\Users\javier\PycharmProjects\aprende_camaras_python_v3\versiones_flask\camaras_todas_ip10\camaras_config.py", line 35, in cargar_camaras
+    with open(ruta_config_lan, "r") as f:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'config\\config\\config_lan.cfg'
+2026-05-12 11:27:13,413 | INFO     | app | Iniciando aplicación
+2026-05-12 11:27:21,868 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:30:36,559 | INFO     | app | Iniciando aplicación
+2026-05-12 11:30:39,506 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:31:23,079 | INFO     | app | Cámaras cargadas
+2026-05-12 11:31:40,125 | INFO     | app | Iniciando aplicación
+2026-05-12 11:31:48,705 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:32:02,352 | INFO     | app | Iniciando aplicación
+2026-05-12 11:32:02,352 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:32:05,450 | INFO     | app | Cámaras cargadas
+2026-05-12 11:32:07,140 | INFO     | app | Iniciando aplicación
+2026-05-12 11:32:07,141 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:32:10,122 | INFO     | app | Cámaras cargadas
+2026-05-12 11:35:22,851 | INFO     | app | Iniciando aplicación
+2026-05-12 11:35:22,851 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:35:25,933 | INFO     | app | Cámaras cargadas
+2026-05-12 11:35:27,610 | INFO     | app | Iniciando aplicación
+2026-05-12 11:35:27,610 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:35:30,605 | INFO     | app | Cámaras cargadas
+2026-05-12 11:35:52,360 | INFO     | app | Iniciando aplicación
+2026-05-12 11:35:52,360 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:37:16,905 | INFO     | app | Iniciando aplicación
+2026-05-12 11:37:20,146 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:37:27,463 | INFO     | app | Cámaras cargadas
+2026-05-12 11:38:30,590 | INFO     | app | Iniciando aplicación
+2026-05-12 11:38:42,368 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:38:46,530 | INFO     | app | Cámaras cargadas
+2026-05-12 11:40:09,599 | INFO     | app | Iniciando aplicación
+2026-05-12 11:40:09,599 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:40:16,736 | INFO     | app | Cámaras cargadas
+2026-05-12 11:40:18,385 | INFO     | app | Iniciando aplicación
+2026-05-12 11:40:18,385 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:40:23,301 | INFO     | app | Cámaras cargadas
+2026-05-12 11:43:26,142 | INFO     | app | Iniciando aplicación
+2026-05-12 11:43:26,142 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:43:28,282 | INFO     | app | Cámaras cargadas
+2026-05-12 11:43:28,913 | INFO     | app | Iniciando aplicación
+2026-05-12 11:43:28,913 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:43:31,052 | INFO     | app | Cámaras cargadas
+2026-05-12 11:44:33,779 | INFO     | app | Iniciando aplicación
+2026-05-12 11:44:33,779 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:44:35,942 | INFO     | app | Cámaras cargadas
+2026-05-12 11:44:36,562 | INFO     | app | Iniciando aplicación
+2026-05-12 11:44:36,562 | INFO     | app | Cargando cámaras desde config
+2026-05-12 11:44:38,717 | INFO     | app | Cámaras cargadas

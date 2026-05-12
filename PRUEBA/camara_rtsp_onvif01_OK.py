@@ -6,6 +6,7 @@ import time
 # CONFIG CAMARA
 # ======================
 ip = '192.168.60.153'
+ip = '192.168.1.105'
 port = 2020
 user = 'cepy2026'
 password = 'Castelar2026'
