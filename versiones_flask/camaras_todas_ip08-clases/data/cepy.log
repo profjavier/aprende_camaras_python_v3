@@ -157,3 +157,21 @@ AttributeError: 'CamaraStream' object has no attribute 'get_camaras'
 2026-05-11 21:13:38,300 | INFO     | app | Iniciando aplicación
 2026-05-11 21:14:06,428 | INFO     | app | No conecta cámara CASA
 2026-05-11 21:14:08,362 | INFO     | app | No conecta cámara CASA
+2026-05-19 20:35:52,365 | INFO     | app | Iniciando aplicación
+2026-05-19 20:35:54,214 | INFO     | app | Iniciando aplicación
+2026-05-19 20:36:22,427 | INFO     | app | No conecta cámara CEPY07
+2026-05-19 20:36:24,860 | INFO     | app | No conecta cámara CASA
+2026-05-19 20:36:54,374 | INFO     | app | No conecta cámara CEPY01
+2026-05-19 20:36:54,792 | INFO     | app | No conecta cámara CASA
+2026-05-19 20:37:24,809 | INFO     | app | No conecta cámara CEPY08
+2026-05-19 20:37:29,443 | INFO     | app | No conecta cámara CEPY07
+2026-05-19 20:37:54,814 | INFO     | app | No conecta cámara CEPY01
+2026-05-19 20:37:59,633 | INFO     | app | No conecta cámara CEPY02
+2026-05-19 20:38:29,329 | INFO     | app | No conecta cámara CEPY02
+2026-05-19 20:38:31,687 | INFO     | app | No conecta cámara CEPY08
+2026-05-19 21:02:53,024 | INFO     | app | Iniciando aplicación
+2026-05-19 21:03:23,079 | INFO     | app | No conecta cámara CASA
+2026-05-19 21:03:53,221 | INFO     | app | No conecta cámara CEPY01
+2026-05-19 21:04:27,660 | INFO     | app | No conecta cámara CEPY07
+2026-05-19 21:04:57,718 | INFO     | app | No conecta cámara CEPY02
+2026-05-19 21:05:29,966 | INFO     | app | No conecta cámara CEPY08
